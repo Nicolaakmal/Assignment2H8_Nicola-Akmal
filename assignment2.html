@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Sederhana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#product">PRODUCT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#inventory">MY INVENTORY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <!-- Profile Card -->
+        <div class="card profile-card mb-4" shadow-sm>
+            <div class="card-body">
+                <div class="row">
+                    <!-- Profile Image Column -->
+                    <div class="col-md-2 text-center">
+                        <img src="profile-pic.jpeg" alt="Profile Image" class="rounded-circle img-fluid"
+                            style="width: 150px; height: 150px;">
+                    </div>
+
+                    <!-- The firts Profile Info Column -->
+                    <div class="col-md-5"><br>
+                        <h3>Nama Anda</h3>
+                        <p class="text-muted">Front End Designer</p>
+                        <div class="mb-2">
+                            <a href="#kontak" class="btn btn-outline-primary btn-sm mr-1">Kontak</a>
+                            <a href="#resume" class="btn btn-outline-success btn-sm">Resume</a>
+                        </div>
+                    </div>
+
+                    <!-- The second profile Info Column -->
+                    <div class="col-md-5">
+                        <table class="table table-borderless">
+                            <thead>
+                                <th scope="col">Availability</th>
+                                <td scope="col">Full-Time</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Usia</th>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lokasi</th>
+                                    <td>Jakarta</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pengalaman</th>
+                                    <td colspan="2">2 Tahun</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Email</th>
+                                    <td colspan="2">Nicol@gmail.com</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="row" id="hide">
+            <div class="col-md-12">
+                <form>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="name" placeholder="Masukkan nama anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="role" class="form-label">Role</label>
+                        <input type="text" class="form-control" id="role">
+                    </div>
+                    <div class="mb-3">
+                        <label for="availability" class="form-label">Availability</label>
+                        <input type="text" class="form-control" id="availability">
+                    </div>
+                    <div class="mb-3">
+                        <label for="usia" class="form-label">Usia</label>
+                        <input type="text" class="form-control" id="usia">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lokasi" class="form-label">Lokasi</label>
+                        <input type="text" class="form-control" id="lokasi">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pengalaman" class="form-label">Pengalaman</label>
+                        <input type="text" class="form-control" id="pengalaman">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <button id="button-me" type="submit" class="btn btn-success" style="width: 100%;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
